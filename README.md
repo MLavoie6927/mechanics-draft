@@ -20,4 +20,4 @@ The cascading year, make, model, and configuration selectors use the public Fuel
 
 ## Payment activation
 
-The request preview leads to `checkout.html`, which summarizes the selected $25, $35, or $50 travel fee. Card collection is intentionally delegated to a verified hosted payment provider. To activate real payment, add the mechanic's Stripe, Square, or PayPal hosted checkout URL to `PAYMENT_URL` in `checkout.js`. Never place secret API keys or raw card-handling code in this public repository.
+The request preview leads to `checkout.html`, which summarizes the selected $25, $35, or $50 travel fee. Card collection is intentionally delegated to a verified hosted payment provider. To activate real payment, add the mechanic's three amount-specific Stripe, Square, or PayPal hosted checkout URLs to `PAYMENT_URLS` in `checkout.js`. Never place secret API keys or raw card-handling code in this public repository.
