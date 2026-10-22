@@ -14,4 +14,10 @@ Open `index.html` directly, or serve the folder with any static web server.
 - Add only verified credentials, pricing, warranties, and reviews.
 - Add appropriate privacy, terms, and accessibility information.
 
-The form is intentionally a front-end demonstration and transmits no data.
+## Vehicle data
+
+The cascading year, make, model, and configuration selectors use the public FuelEconomy.gov Web Services catalog administered by Oak Ridge National Laboratory for the U.S. Department of Energy and U.S. Environmental Protection Agency. The interface presents the latest 30 model years and never generates vehicle records when the service is unavailable.
+
+## Payment activation
+
+The request preview leads to `checkout.html`, which summarizes the selected $25, $35, or $50 travel fee. Card collection is intentionally delegated to a verified hosted payment provider. To activate real payment, add the mechanic's Stripe, Square, or PayPal hosted checkout URL to `PAYMENT_URL` in `checkout.js`. Never place secret API keys or raw card-handling code in this public repository.
